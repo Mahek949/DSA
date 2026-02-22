@@ -1,0 +1,45 @@
+# class Node:
+#     def _init_(self, info ,next=None):
+#         self.data = info
+#         self.next = next
+# class SinglyLinkedList:
+#     def _init_(self,head=None):
+#         self.head=head
+
+#     def insertAtEnd(self,value):
+#          temp = Node()  #temp is a pointer 
+#          if (self.head!=None): #We see if our head is pointing towards any linked list
+#             temp1=self.head
+#             while(temp1.next!=None):
+#                 temp1=temp1.next
+#                 temp1.next=temp #When we need to add a node at the end
+#          else:
+#             self.head=temp #When we dont have any existing code and the new node we are adding is the only node in the linked list.
+   
+#     def insertAtBeg(self,value):
+#         temp=Node(value) #Add a node at the beginning
+#         temp.next=self.head #temp ka next head ban jaye
+#         self.head=temp
+
+#     def insertAtPos(self,value,pos):#The pos variable will have data of the previous node after which we have to insert the element
+#         temp=Node(value)
+#         temp1=self.head
+#         if(temp1.data==pos):
+#             temp.next=temp1.next
+#             temp1.next=temp
+#         temp1=temp1.next    
+
+#     def printLL(self):
+#         temp1=self.head
+#         while(temp1.next!=None):
+#             print(temp1.data,end=" ")
+#             temp1=temp1.next
+#         print(temp1.data)  
+
+# obj = SinglyLinkedList()
+# obj.insertAtEnd(10)
+# obj.insertAtEnd(20)
+# obj.insertAtEnd(30) 
+# obj.insertAtBeg(5)
+# obj.insertAtPos(40,20)
+# obj.printLL()
